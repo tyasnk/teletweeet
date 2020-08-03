@@ -8,6 +8,9 @@ authors = ["tyasnk"]
 python = "^3.7"
 tweepy = "^3.9.0"
 black = "^19.10b0"
+schedule = "^0.6.0"
+python-telegram-bot = "^12.8"
+pytz = "^2020.1"
 
 [tool.poetry.dev-dependencies]
 
