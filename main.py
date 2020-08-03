@@ -11,7 +11,6 @@ def ping():
 
 def handler():
     trends = trending()
-    print(trends)
     logger.info("Get trends success")
     telegram_bot_sendtext(trends)
     logger.info("Message sent")
