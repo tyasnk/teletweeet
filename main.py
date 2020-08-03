@@ -5,6 +5,10 @@ import time
 from logger import logger
 
 
+def ping():
+    logger.info("Ping!")
+
+
 def handler():
     trends = trending()
     logger.info("Get trends success")
@@ -14,6 +18,7 @@ def handler():
 
 def main():
     handler()
+    schedule.every(1).minutes.do(ping)
     schedule.every(15).minutes.do(handler)
     while True:
         schedule.run_pending()
