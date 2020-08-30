@@ -19,7 +19,7 @@ def handler():
 def main():
     handler()
     schedule.every(30).seconds.do(ping)
-    schedule.every(15).minutes.do(handler)
+    schedule.every(60).minutes.do(handler)
     while True:
         schedule.run_pending()
         time.sleep(1)
